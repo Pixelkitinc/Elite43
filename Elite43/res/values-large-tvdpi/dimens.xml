@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="text_size18">18dp</dimen><dimen name="text_size19">19dp</dimen><dimen name="text_size20">20dp</dimen><dimen name="text_size23">23dp</dimen>
+    <dimen name="text_size25">25dp</dimen><dimen name="text_size30">30dp</dimen>
+</resources>

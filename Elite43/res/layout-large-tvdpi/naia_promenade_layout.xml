@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    	<RelativeLayout
+    		android:id="@+id/led_naia_info_layout"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:visibility="gone">
+    
+			<RelativeLayout 
+	    		android:layout_width="match_parent"
+	    		android:layout_height="360dp">
+
+				<ImageView
+		    		android:id="@+id/led_naia_info_image"
+		    		android:scaleType="fitXY"
+		    		android:layout_width="match_parent"
+		    		android:layout_height="match_parent"
+		    		android:src="@drawable/site_naia_b" 
+		    		android:contentDescription="@string/app_name"/>
+			</RelativeLayout>
+	
+			<LinearLayout 
+	    		android:id="@+id/led_naia_info_list_layout"
+	    		android:layout_width="210dp"
+       			android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true"
+        		android:layout_marginTop="230dp"
+        		android:orientation="vertical"
+        		android:visibility="gone">
+	    
+	    		<TextView
+        			android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/location"
+            		android:layout_gravity="right"
+            		android:textSize="@dimen/text_size25"
+            		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:gravity="right"
+            		android:text="@string/naia"
+            		android:textSize="@dimen/text_size19"
+            		android:textColor="@color/redfc"
+            		android:textAppearance="?android:attr/textAppearanceSmall" />
+            
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/dimensions"
+            		android:layout_gravity="right"
+            		android:textSize="@dimen/text_size25"
+            		android:textAppearance="?android:attr/textAppearanceMedium" />
+   		
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:gravity="right"
+            		android:textSize="@dimen/text_size19"
+            		android:textColor="@color/redfc"
+            		android:text="@string/naia_dimension_text"
+            		android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/pitch"
+            		android:layout_gravity="right"
+            		android:textSize="@dimen/text_size25"
+            		android:textAppearance="?android:attr/textAppearanceMedium" />
+   		
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:gravity="right"
+            		android:textSize="@dimen/text_size19"
+            		android:textColor="@color/redfc"
+            		android:text="@string/pitch_text"
+            		android:textAppearance="?android:attr/textAppearanceSmall" />
+			</LinearLayout>
+	
+			<LinearLayout 
+	    		android:id="@+id/led_naia_info_spots_holder_layout"
+	    		android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="420dp"
+	    		android:orientation="vertical"
+	    		android:visibility="gone">
+
+				<TextView
+		    		android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/available_spots"
+		    		android:gravity="center"
+		    		android:textSize="@dimen/text_size25"
+		    		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+				<ProgressBar
+		    		android:id="@+id/led_naia_info_progressbar"
+		    		style="?android:attr/progressBarStyleHorizontal"
+		    		android:layout_width="540dp"
+		    		android:layout_height="23dp" 
+		    		android:layout_gravity="center"
+		    		android:layout_marginTop="5dp"
+		    		android:progressDrawable="@drawable/custom_progress"/>
+
+				<Button
+		    		android:id="@+id/led_naia_info_enquire_button"
+		    		android:layout_width="220dp"
+		    		android:layout_height="45dp"
+		    		android:text="@string/inquire" 
+		    		android:layout_gravity="center"
+		    		android:layout_marginTop="10dp"
+		    		android:textColor="@color/white"
+		    		android:textSize="@dimen/text_size20"
+		    		android:background="@drawable/custom_button_selector"/>
+
+				<TextView
+		    		android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/current_booking"
+		    		android:gravity="center"
+		    		android:textSize="@dimen/text_size25"
+		    		android:layout_marginTop="10dp"
+		    		android:textAppearance="?android:attr/textAppearanceMedium" />
+					
+				<LinearLayout
+				    android:id="@+id/led_naia_information_holder_layout"
+		    		android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginTop="15dp"
+		    		android:orientation="vertical">
+		    		
+				</LinearLayout>
+			</LinearLayout>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/led_promenade_info_layout"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:visibility="gone">
+    
+			<RelativeLayout 
+	    		android:layout_width="match_parent"
+	    		android:layout_height="360dp">
+
+				<ImageView
+		    		android:id="@+id/led_promenade_info_image"
+		    		android:scaleType="fitXY"
+		    		android:layout_width="match_parent"
+		    		android:layout_height="match_parent"
+		    		android:src="@drawable/site_promenade_b" 
+		    		android:contentDescription="@string/app_name"/>
+			</RelativeLayout>
+	
+			<LinearLayout 
+	    		android:id="@+id/led_promenade_info_list_layout"
+	    		android:layout_width="300dp"
+       			android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true"
+        		android:layout_marginTop="230dp"
+        		android:orientation="vertical"
+        		android:visibility="gone">
+	    
+	    		<TextView
+        			android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/location"
+            		android:layout_gravity="right"
+            		android:textSize="@dimen/text_size25"
+            		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:gravity="right"
+            		android:textSize="@dimen/text_size19"
+            		android:textColor="@color/redfc"
+            		android:text="@string/greehills_promenade"
+            		android:textAppearance="?android:attr/textAppearanceSmall" />
+   		
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:gravity="right"
+            		android:textSize="@dimen/text_size19"
+            		android:textColor="@color/redfc"
+            		android:text="@string/greenhills_shopping_center"
+            		android:textAppearance="?android:attr/textAppearanceSmall" />
+            
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/dimensions"
+            		android:layout_gravity="right"
+            		android:textSize="@dimen/text_size25"
+            		android:textAppearance="?android:attr/textAppearanceMedium" />
+   		
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:gravity="right"
+            		android:textSize="@dimen/text_size19"
+            		android:textColor="@color/redfc"
+            		android:text="@string/promenade_dimension_a"
+            		android:textAppearance="?android:attr/textAppearanceSmall" />
+   		
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:gravity="right"
+            		android:textSize="@dimen/text_size19"
+            		android:textColor="@color/redfc"
+            		android:text="@string/promenade_dimension_b"
+            		android:textAppearance="?android:attr/textAppearanceSmall" />
+   		
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:gravity="right"
+            		android:textSize="@dimen/text_size19"
+            		android:textColor="@color/redfc"
+            		android:text="@string/promenade_dimension_c"
+            		android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/pitch"
+            		android:layout_gravity="right"
+            		android:textSize="@dimen/text_size25"
+            		android:textAppearance="?android:attr/textAppearanceMedium" />
+   		
+   				<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:gravity="right"
+            		android:textSize="@dimen/text_size19"
+            		android:textColor="@color/redfc"
+            		android:text="@string/promenade_pitch"
+            		android:textAppearance="?android:attr/textAppearanceSmall" />
+			</LinearLayout>
+	
+			<LinearLayout 
+	    		android:id="@+id/led_promenade_info_spots_holder_layout"
+	    		android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="490dp"
+	    		android:orientation="vertical"
+	    		android:visibility="gone">
+
+				<TextView
+		    		android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/available_spots"
+		    		android:gravity="center"
+		    		android:textSize="@dimen/text_size25"
+		    		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+				<ProgressBar
+		    		android:id="@+id/led_promenade_info_progressbar"
+		    		style="?android:attr/progressBarStyleHorizontal"
+		    		android:layout_width="540dp"
+		    		android:layout_height="23dp" 
+		    		android:layout_gravity="center"
+		    		android:layout_marginTop="5dp"
+		    		android:progressDrawable="@drawable/custom_progress"/>
+
+				<Button
+		    		android:id="@+id/led_promenade_info_enquire_button"
+		    		android:layout_width="220dp"
+		    		android:layout_height="45dp"
+		    		android:text="@string/inquire" 
+		    		android:layout_gravity="center"
+		    		android:layout_marginTop="10dp"
+		    		android:textColor="@color/white"
+		    		android:textSize="@dimen/text_size20"
+		    		android:background="@drawable/custom_button_selector"/>
+
+				<TextView
+		    		android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/current_booking"
+		    		android:gravity="center"
+		    		android:layout_marginTop="10dp"
+		    		android:textSize="@dimen/text_size25"
+		    		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+				<LinearLayout
+				    android:id="@+id/led_promenade_information_holder_layout"
+		    		android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginTop="15dp"
+		    		android:orientation="vertical">
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

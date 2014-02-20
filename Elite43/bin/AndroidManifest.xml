@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="elite.act.app"
+    android:versionCode="3"
+    android:versionName="1.2" >
+	
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	
+	<supports-screens 
+    	android:smallScreens="false"
+    	android:normalScreens="true"                  
+    	android:largeScreens="true"                  
+    	android:xlargeScreens="false"                  
+    	android:requiresSmallestWidthDp="320"/> 
+	
+	<compatible-screens>
+        <!-- all normal size screens -->
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+        <screen android:screenSize="normal" android:screenDensity="480" /> <!-- xxhdpi -->
+        
+        <!-- all large size screens -->
+        <screen android:screenSize="large" android:screenDensity="213" /> <!-- tvdpi -->
+    </compatible-screens>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:debuggable="false">
+        <activity
+            android:name="elite.act.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
